@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>LASSO</title>
+		<link rel="stylesheet" type="text/css" href="stylefile_lasso_white.css" />
+	</head>
+	<body>
+		<div class="project-title">
+		<p><img src="lasso_logo.png" title="LASSO logo" border="1" height="100px"></p>
+		<h2>A tutorial on the LASSO and the "shooting algorithm"</h2>
+		<h3>Author: <a href="http://www.gautampendse.com">Gautam V. Pendse</a></h3>
+		</div>		
+
+		<div class="abstract">
+		<h3>Abstract</h3>
+		<p>
+		The LASSO is an L1 penalized regression technique introduced by Tibshirani (1996). An efficient algorithm called the "shooting algorithm" was proposed by Fu (1998) for solving the LASSO problem in the multi parameter case. In this tutorial, we present a simple and self-contained derivation of the LASSO "shooting algorithm". 		
+		</p>
+			<div class="demo">
+			<a STYLE="text-decoration:none" href="pendseLassoShooting.pdf">Download LASSO shooting tutorial <img src="pdficon_large.gif" height="20px"></a>
+			</div>
+		</div>		
+
+
+		<div class="coreidea">
+		<h3>Main ideas</h3>
+		<ol>
+		<li> LASSO is an L1 penalized linear regression procedure that regularizes the solution and results in sparsity/feature selection. <br><br>
+		<li> The LASSO objective function is convex and non-differentiable. However, there is a special structure in the non-differentiable part which makes convergence of the co-ordinate wise optimization to the global minimum possible. <br><br>
+		<li> The "shooting algorithm" is a special instance of co-ordinate wise optimization applied to the LASSO objective function. <br><br>
+		</ol>
+		</div>
+		
+		<div class="refs">
+		<h3>Key references</h3>
+		<ol>		
+		<li> Gautam V. Pendse, "A tutorial on the LASSO and the "shooting algorithm", <a STYLE="text-decoration:none" href="pendseLassoShooting.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> (this tutorial) <br><br>
+
+		<li> J. Friedman, T. Hastie, H. Hofling, and R. Tibshirani. Pathwise coordinate optimization. <i>The Annals of Applied Statistics</i>, 1(2):302-332, 2007. <a STYLE="text-decoration:none" href="Friedman2007.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> <br><br>
+
+		<li> W. J. Fu. Penalized Regressions: The Bridge Versus the Lasso. <i>Journal of Computational and Graphical Statistics</i>, 7:397-416, 1998. <a STYLE="text-decoration:none" href="Fu1998.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> <br><br>
+
+		<li> R. Tibshirani. Regression shrinkage and selection via the lasso. <i>Journal of the Royal Statistical Society Series B</i>, 58(1):267-288, 1996. <a STYLE="text-decoration:none" href="Tibshirani1996.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> <br><br>
+
+		<li> P. Tseng. Coordinate Ascent for Maximizing Nondifferentiable Concave Functions. Technical Report LIDS-P-1840, <i>Laboratory for Information and Decision Systems</i>, Massachusetts Institute of Technology, 1988. <a STYLE="text-decoration:none" href="Tseng1988.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> <br><br>
+
+		<li> P. Tseng. Convergence of a Block Coordinate Descent Method for Nondifferentiable Minimization. <i>Journal of optimization theory and applications</i>, 109(3):475-494, 2001. <a STYLE="text-decoration:none" href="Tseng2001.pdf">[pdf <img src="pdficon_large.gif" height="20px">]</a> <br><br>
+		
+		</ol>
+		</div>
+
+		<div class="figures">
+		<h3>PDF Figures</h3>
+		<ol>
+		<li> <a href="figures_pdf/figure1.pdf">Figure1 [choosing regularization parameter]</a>
+		<li> <a href="figures_pdf/figure2.pdf">Figure2 [Illustrative LASSO fit]</a>
+		</ol>
+		</div>
+
+		<div class="download-code">
+		<h3>Download Code</h3>
+Matlab code for fitting the LASSO model and estimating the regularization parameter can be downloaded here: <a STYLE="text-decoration:none" href="../../lasso_webpage_code_data.zip">lasso_webpage_code_data.zip&nbsp<img src="zip_icon.png" height="20px"></a>. This software is freely available under the terms of the <a href="#lasso_license">license</a> described below. This zip file includes the following directories:
+		
+		<p>
+		<h4>webpage</h4>
+This directory contains a standalone version of this webpage <font face="monospace">lasso_shooting.html</font> for offline browsing.
+		</p>
+
+		<p>
+		<h4>code</h4>		
+This directory contains code for:
+<ol> 
+<li> fitting a LASSO model: <font face="monospace">solveLasso.m</font> <br><br>
+<li> estimating the regularization parameter: <font face="monospace">estimateLassoLambda.m</font> <br><br>
+<li> reproducing Figure 1 and Figure 2 in the tutorial: <font face="monospace">exampleLassoUsage.m</font> <br><br>
+</ol>
+		</p>
+
+		<p>
+		<h4>data</h4>
+This directory contains a MATLAB .mat file: <font face="monospace">sampleDataForLasso.mat</font> which contains the data used to generate Figure 1 and Figure 2.
+		</p>
+
+		<p>
+		<h4><a name="lasso_license">License</a></h4> 		
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">LASSO code</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Gautam V. Pendse</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+		</p>
+	
+		</div>
+
+		<div class="copyright">
+		<p align="center"> Copyright &#169; 2011, Gautam V. Pendse <br> e-mail: <font face="monospace">gpendse@mclean.harvard.edu</font> </p>
+		</div>
+
+	</body>
+</html>
