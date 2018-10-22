@@ -18,3 +18,4 @@
    - images为拟合效果
    - para_result.csv为拟合参数结果。
  * Reference_paper：参考文献
+ * [传统利率期限结构模型比较](https://github.com/Aplicity/Nelson_Siegel-Lasso/blob/master/%E4%BC%A0%E7%BB%9F%E5%88%A9%E7%8E%87%E6%9C%9F%E9%99%90%E7%BB%93%E6%9E%84%E6%A8%A1%E5%9E%8B%E6%AF%94%E8%BE%83.pdf):模型三的求解文档
