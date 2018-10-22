@@ -1,6 +1,7 @@
 # Nelson_Siegel-Lasso
 基于Lasso回归的Nelson-Siegel扩展模型
-
+## Model
+![image](https://github.com/Aplicity/Nelson_Siegel-Lasso/blob/master/model_fig.png)
 ## DataSet Describe
  自变量为时间𝑡，因变量为利率𝑟。其余字段可以不理。
  * train:训练集，共 66 天，对每天数据进行拟合，得到66×3个回归方程。 
